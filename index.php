@@ -15,7 +15,6 @@
         $products = get_products();
         foreach ($products as $product) {
         ?>
-        
             <div class="shop">
                 <div class=logo-product">
                     <img class="img-product" src="img/<?= $product['photo']?>"> 

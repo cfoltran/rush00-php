@@ -1,0 +1,10 @@
+.basket {
+    font-family: monospace;
+    border: black 1px solid;
+    margin: 15px;
+    padding: 15px;
+}
+
+.retirer {
+    position: right;
+}

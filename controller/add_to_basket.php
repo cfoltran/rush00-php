@@ -3,16 +3,10 @@
     include("../model/products.php");
     function add_to_basket($id_product) {
         session_start();
-        if (!isset($_SESSION['basket'])) {
-            $basket = [];
-        } else {
-            $basket[] = $_SESSION['basket'];
-        }
-        $basket[] = [
-            $id_product => get_products_by_id($id_product)
-        ];
+        $basket = $_SESSION['basket'];
+        $basket[] = get_products_by_id($id_product);
+
         $_SESSION['basket'] = $basket;
-        var_dump($_SESSION['basket']);die();
         header('Location: ../index.php');
     }
 
