@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
     include ('model/database.php');
-    $con = mysqli_connect("localhost:3307", "root", "rushrush", "test");
+    $con = mysqli_connect("localhost", "root", "rushrush", "test");
     if (!$con)
         die("An error occured 😥\n");
     $db_query = "CREATE DATABASE rushdb";

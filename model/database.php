@@ -1,6 +1,6 @@
 <?php
 	function connect() {
-	$host = "localhost:3307";
+	$host = "localhost";
 	$user = "root";
 	$pass = "rushrush";
 	$db = "rushdb";
