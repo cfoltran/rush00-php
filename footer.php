@@ -10,7 +10,7 @@
 </head>
 <body>
     <footer>
-        <a class="btn-blue">Espace administrateur</a>
+        <a class="btn-blue" href="logadmin.php">Espace administrateur</a>
         <?php
             session_start();
             if (isset($_SESSION['loggued_on_user'])) {
