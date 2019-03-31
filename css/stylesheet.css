@@ -10,7 +10,7 @@
     border-bottom: 1px solid black;
 }
 
-button {
+button, a {
     border: none;
     font-family: monospace;
     font-size: 15px;
@@ -60,9 +60,17 @@ button:hover {
     background-color: #4CAF50;
     color: white;
   }
+
+  .basket-counter {
+    color: rgb(167, 69, 69);
+  }
   
   .nav-menu .icon {
     display: none;
+  }
+
+  .wallet {
+    color: rgb(95, 95, 194);
   }
   
   @media screen and (max-width: 600px) {
@@ -112,7 +120,7 @@ td {
 }
 
 .img-product {
-  width: 50%;
+  width: 90%;
 }
 
 .label {

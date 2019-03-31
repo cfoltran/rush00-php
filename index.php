@@ -20,7 +20,7 @@
                         <img class="img-product" src="img/<?= $product['photo']?>"> 
                     </div>
                     <div class="label"><?= $product['label']?><br>
-                    <input type="button" value="<?= $product['price'] ?> wallets">
+                    <a href="./controller/add_to_basket.php?id_prod=<?=$product['id_prod']?>"><?= $product['price'] ?> wallets</a>
                 </div>
             </div>
         <?php } ?>

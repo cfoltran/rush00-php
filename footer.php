@@ -11,9 +11,14 @@
 <body>
     <footer>
         <a class="btn-blue">Espace administrateur</a>
-        <a class="btn-blue">À propos</a>
+        <?php
+            session_start();
+            if (isset($_SESSION['loggued_on_user'])) {
+                echo '<a href="controller/account.php?action=del" class="btn-blue">Delete account</a>';
+            }
+        ?>
         <a class="btn-blue">CGU</a>
-        <p>© 2019 make with ☕️ by Clément Foltran</p>
+        <p>© 2019 make with ☕️ by Clément and Boris</p>
     </footer>
 </body>
 </html>

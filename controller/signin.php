@@ -15,7 +15,7 @@
     }
     session_start();
     $co = connect();
-    $login = mysqli_real_escape_string($co, $_POST['login']);
+    $login = mysqli_real_escape_string($co, $_POST['user']);
     $passwd = mysqli_real_escape_string($co, $_POST['passwd']);
     mysqli_close($co);
     if (isset($login) && isset($passwd) && auth($login, $passwd)) {
