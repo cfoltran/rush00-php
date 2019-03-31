@@ -11,12 +11,14 @@
     <body>
         <?php include('menu.php');
             $total = 0;
+            $line = 0;
             foreach ($_SESSION['basket'] as $article) {
+                $line++;
                 $stuff = $article[0];
                 $total += $stuff['price'];
         ?>
                 <div class="basket">
-                  <?php echo " Article : " . $stuff['label'] . "\t\tPrix : " . $stuff['price']; ?><input class="retirer" type = button value = Retirer>
+                  <?php echo " Article : " . $stuff['label'] . "\t\tPrix : " . $stuff['price']; ?> Wallets <a style="float:right;" href="/controller/del_to_basket.php?line=<?=$line?>">Supprimer l'article</a>
                 </div>
         <?php } ?> 
         <div class="pricetot"> prix total : <?php echo $total . " Wallets" ?> </div>

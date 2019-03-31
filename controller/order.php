@@ -10,6 +10,12 @@
         $req = mysqli_query($co, $req);
         $req = "UPDATE users SET wallet = wallet - $price WHERE id_user = $id";
         $req = mysqli_query($co, $req);
+        $req = "UPDATE product SET pieces = pieces - 1 WHERE id_prod = $id_prod";
+        $req = mysqli_query($co, $req);
+        if ($req) {
+            unset($_SESSION['basket']);
+            echo "<script type='text/javascript'> alert('Commande validée ❤️'); window.location='../index.php" . "'</script>";
+        }
     }
     session_start();
     $co = connect();

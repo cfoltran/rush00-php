@@ -1,8 +1,9 @@
 <div class="nav-menu" id="menu">
     <a href="/">42 shop</a>
-    <a href="">BDE</a>
-    <a href="">Bocal</a>
-    <a href="">Adm</a>
+    <a href="/?filter=bde">BDE</a>
+    <a href="/?filter=bocal">Bocal</a>
+    <a href="/?filter=adm">Adm</a>
+    <a href="/?filter=games">Games</a>
     <?php
         include('model/basket.php');
         include('model/account.php');
@@ -14,6 +15,7 @@
             echo "<a href='./controller/logout.php'>Logout</a>";
             echo "<a href='./basket.php'>Basket<span class='basket-counter'> " . get_number_of_product() . "</span> </a>";
             echo "<a><span class='wallet'>" . get_wallet($_SESSION['loggued_on_user']) . " Wallets</span></a>";
+            echo "<a><span class='wallet'> Bonjour " . $_SESSION['loggued_on_user'] . "</span></a>";
         }
     ?>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">

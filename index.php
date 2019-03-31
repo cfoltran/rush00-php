@@ -14,16 +14,18 @@
         include('model/products.php');
         $products = get_products();
         foreach ($products as $product) {
-        ?>
-            <div class="shop">
-                <div class=logo-product">
-                    <img class="img-product" src="img/<?= $product['photo']?>"> 
+            if (($product['id_cat'] == get_category_by_id($_GET['filter'])) || !$_GET['filter']) {
+            ?>
+                <div class="shop">
+                    <div class=logo-product">
+                        <img class="img-product" src="img/<?= $product['photo']?>"> 
+                    </div>
+                    <div class="label"><?=$product['label']?><br>
+                        <p><?=$product['pieces']?> en stock</p>
+                        <a href="./controller/add_to_basket.php?id_prod=<?=$product['id_prod']?>"><?= $product['price'] ?> wallets</a>
+                    </div>
                 </div>
-                <div class="label"><?= $product['label']?><br>
-                    <a href="./controller/add_to_basket.php?id_prod=<?=$product['id_prod']?>"><?= $product['price'] ?> wallets</a>
-                </div>
-            </div>
-        <?php }  ?>
+            <?php } } ?>
     </div>
     <?php include ('footer.php'); ?>
 </body>
