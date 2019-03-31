@@ -1,0 +1,8 @@
+INSERT INTO categories VALUES(id_cat, 'intranet');
+INSERT INTO categories VALUES(id_cat, 'bde');
+INSERT INTO categories VALUES(id_cat, 'games');
+INSERT INTO categories VALUES(id_cat, 'bocal');
+INSERT INTO categories VALUES(id_cat, 'adm');
+
+INSERT INTO product VALUE(id_prod, 'nintendo switch', 139, 400, 'Nintendo offerte par facebook', '1.jpg', 3);
+INSERT INTO product VALUE(id_prod, 'stack overflow t-shirt', 50,  40, 'offert par stack overflow', '2.jpg', 3);
