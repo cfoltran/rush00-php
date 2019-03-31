@@ -23,7 +23,7 @@
                     <a href="./controller/add_to_basket.php?id_prod=<?=$product['id_prod']?>"><?= $product['price'] ?> wallets</a>
                 </div>
             </div>
-        <?php } ?>
+        <?php }  ?>
     <?php include ('footer.php'); ?>
 </body>
 </html>
