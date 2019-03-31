@@ -1,0 +1,11 @@
+.admincommande 
+{
+    border: black 1px solid;
+    color: green;
+    margin: 15px;
+    padding: 15px;
+}
+
+.addtostock {
+    text-align: center;
+}

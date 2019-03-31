@@ -8,9 +8,9 @@
         if (!isset($_SESSION['loggued_on_user'])) {
             echo "<a href='./login.php'>Sign in</a>";
             echo "<a href='/register.php'>Register</a>";
+            echo "<a href='./index.php'>Panier</a>";
         } else {
             echo "<a href='./controller/logout.php'>Logout</a>";
-            echo "<a href='./index.php'>Panier</a>";
         }
     ?>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
