@@ -6,6 +6,7 @@ footer {
     height: 5%;
     padding: 2%;
     border-top: solid black 1px;
+    background-color: rgba(94, 94, 94, 0.612);
     text-align: center;
 }
 

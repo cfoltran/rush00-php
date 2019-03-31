@@ -1,8 +1,5 @@
 <div class="nav-menu" id="menu">
     <a href="/">42 shop</a>
-    <a href="">BDE</a>
-    <a href="">Bocal</a>
-    <a href="">Adm</a>
     <?php
         include('model/basket.php');
         include('model/account.php');

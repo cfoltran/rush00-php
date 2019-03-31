@@ -9,21 +9,23 @@
 </head>
 <body>
     <?php include ('menu.php'); ?>
+    <div class="hop">
     <?php
         include('model/products.php');
         $products = get_products();
         foreach ($products as $product) {
         ?>
-            <div class="hop">
-                <div class="shop">
-                    <div class=logo-product">
-                        <img class="img-product" src="img/<?= $product['photo']?>"> 
-                    </div>
-                    <div class="label"><?= $product['label']?><br>
+        
+            <div class="shop">
+                <div class=logo-product">
+                    <img class="img-product" src="img/<?= $product['photo']?>"> 
+                </div>
+                <div class="label"><?= $product['label']?><br>
                     <a href="./controller/add_to_basket.php?id_prod=<?=$product['id_prod']?>"><?= $product['price'] ?> wallets</a>
                 </div>
             </div>
         <?php }  ?>
+    </div>
     <?php include ('footer.php'); ?>
 </body>
 </html>
